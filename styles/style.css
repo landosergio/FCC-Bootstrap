@@ -1,0 +1,235 @@
+/* font-family: 'Lora', serif;
+font-family: 'Merriweather', serif; */
+
+/* Barra de Navegación  */
+
+.navbar {
+  padding: 2rem;
+
+  font-family: "Merriweather", serif;
+
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos Generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Lora", serif;
+}
+
+.seccion--oscura {
+  color: white;
+  background-color: black;
+}
+
+.seccion--clara {
+  color: #1b1b32;
+  background-color: white;
+}
+
+.seccion__titulo {
+  padding: 15px 0;
+
+  font-family: "Lora", serif;
+  font-weight: 700;
+
+  font-size: 2rem;
+}
+
+.seccion__descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion__texto {
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+}
+
+.texto--negro {
+  color: black;
+}
+
+.texto--blanco {
+  color: white;
+}
+
+/* Sección Principal  */
+
+.seccion-principal {
+  min-height: 450px;
+  padding-bottom: 0.5rem;
+
+  text-align: center;
+
+  background-color: #f5f6f7;
+}
+
+.seccion-principal__contenedor-principal {
+  padding: 3rem;
+}
+
+.seccion-principal__imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  border: 7px solid #30292fff;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.seccion-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+/* Sección "Sobre mí" */
+
+.seccion-sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.seccion-sobre-mi .seccion__contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Seccion Experiencia */
+
+.seccion-experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.seccion-experiencia .subseccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 20px;
+
+  border: 2px solid #8080804d;
+
+  transition: all 0.2s ease-in;
+}
+
+.seccion-experiencia .subseccion:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.seccion-experiencia i {
+  padding: 8px 19px;
+  border-radius: 50%;
+
+  font-size: 2.5rem;
+  color: #7ade30;
+
+  background-color: #0a0a23;
+}
+.subseccion__titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Sección Proyectos */
+
+.seccion-proyectos {
+  padding: 40px;
+}
+
+.seccion-proyectos__contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.seccion-proyectos img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.seccion-proyectos__proyecto {
+  position: relative;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.overlay .seccion-proyectos__contenedor-iconos {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.seccion-proyectos__proyecto:hover img {
+  opacity: 0.2;
+}
+
+.seccion-proyectos__proyecto:hover .overlay {
+  opacity: 1;
+}
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+/* Responsivo */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .seccion-principal__contenedor-inferior__imagen {
+    max-width: 400px;
+  }
+}
